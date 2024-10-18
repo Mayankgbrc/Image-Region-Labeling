@@ -1,4 +1,4 @@
-# Image-Region-Labelling
+# Technical Report 3: Image Region Labelling
 
 ## Scene Segmentation and Interpretation
 
@@ -16,14 +16,19 @@ The objective of this project is to develop an image processing algorithm for re
 The initial step is to convert the color image into a grayscale image, and then into a binary image. A threshold value of 130 is applied, where pixel values above this threshold are set to 1 (representing objects) and those below are set to 0 (representing the background).
 
 - **Original Image**  
-  ![Original Image](https://raw.githubusercontent.com/Mayankgbrc/Image-Region-Labelling/refs/heads/main/images/0.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mayankgbrc/Image-Region-Labelling/refs/heads/main/images/0.png" align="center" height="400px" alt="Original Image" />
+ </p>
 
 - **Grayscale Image**  
-  ![Grayscale Image](https://raw.githubusercontent.com/Mayankgbrc/Image-Region-Labelling/refs/heads/main/images/1.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mayankgbrc/Image-Region-Labelling/refs/heads/main/images/1.png" align="center" height="400px" alt="Grayscale Image" />
+ </p>
 
 - **Binary Image**  
-  ![Binary Image](https://raw.githubusercontent.com/Mayankgbrc/Image-Region-Labelling/refs/heads/main/images/2.png)
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mayankgbrc/Image-Region-Labelling/refs/heads/main/images/2.png" align="center" height="400px" alt="Binary Image" />
+ </p>
 ---
 
 ### Region Labeling Algorithm
@@ -34,7 +39,9 @@ The algorithm iterates over each pixel in the binary image, and upon encounterin
 A refinement step eliminates noise by resetting labels with fewer than a threshold number of pixels to 0.
 
 - **Processed Image after Refinement**  
-  ![Processed Image](https://raw.githubusercontent.com/Mayankgbrc/Image-Region-Labelling/refs/heads/main/images/3.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mayankgbrc/Image-Region-Labelling/refs/heads/main/images/3.png" align="center" height="400px" alt="Processed Image" />
+ </p>
 
 ---
 
@@ -43,7 +50,9 @@ A refinement step eliminates noise by resetting labels with fewer than a thresho
 Image moments are utilized to derive essential parameters like the center of each labeled region (mean_x, mean_y) and the orientation (theta). These values are crucial for analyzing and characterizing the labeled regions.
 
 - **Labeled Image**  
-  ![Labeled Image](https://raw.githubusercontent.com/Mayankgbrc/Image-Region-Labelling/refs/heads/main/images/4.png)
+ <p align="center">
+  <img src="https://raw.githubusercontent.com/Mayankgbrc/Image-Region-Labelling/refs/heads/main/images/4.png" align="center" height="400px" alt="Labeled Image" />
+ </p>
 
 ---
 
@@ -76,7 +85,9 @@ Below are the orientation and dimensions of each object, computed through analys
 - **Width Std**: 4.37 px
 
 **Labeled Image**  
-  ![Final Labeled Image](https://raw.githubusercontent.com/Mayankgbrc/Image-Region-Labelling/refs/heads/main/images/5.png)
+ <p align="center">
+  <img src="https://raw.githubusercontent.com/Mayankgbrc/Image-Region-Labelling/refs/heads/main/images/5.png" align="center" height="400px" alt="Final Labeled Image" />
+ </p>
 
 ---
 
