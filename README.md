@@ -1,4 +1,4 @@
-# Technical Report 3: Image Region Labelling
+# Image Region Labelling
 
 ## Scene Segmentation and Interpretation
 
